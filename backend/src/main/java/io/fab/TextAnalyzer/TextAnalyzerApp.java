@@ -1,13 +1,12 @@
-package fab.io.TextAnalyzer;
+package io.fab.TextAnalyzer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SimpleTextAnalyzerApplication {
-
+public class TextAnalyzerApp {
 	public static void main(String[] args) {
-		SpringApplication.run(SimpleTextAnalyzerApplication.class, args);
+		SpringApplication.run(TextAnalyzerApp.class, args);
 	}
 
 }

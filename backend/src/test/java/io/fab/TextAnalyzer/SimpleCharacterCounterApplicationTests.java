@@ -1,10 +1,10 @@
-package fab.io.TextAnalyzer;
+package io.fab.TextAnalyzer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SimpleTextAnalyzerApplicationTests {
+class SimpleCharacterCounterApplicationTests {
 
 	@Test
 	void contextLoads() {
