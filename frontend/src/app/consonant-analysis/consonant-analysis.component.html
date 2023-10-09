@@ -1,0 +1,24 @@
+<div>
+    <h2>Vowel Analysis</h2>
+    <form (ngSubmit)="analyze()">
+      <div>
+        <label for="input">Enter a sentence: </label>
+        <input type="text" id="input" [(ngModel)]="input" name="input" />
+      </div>
+      <button type="submit">Analyze</button>
+    </form>
+  
+    <div *ngIf="input">
+      <div>
+        <p>Latest analyzed text:</p>
+        <pre>{{ latestAnalysis }}</pre>
+      </div>
+      <div>
+        <hr />
+        <p>Previously analyzed text:</p>
+        <pre>{{ previousAnalysis }}</pre>
+      </div>
+    </div>
+    <hr />
+  </div>
+  
