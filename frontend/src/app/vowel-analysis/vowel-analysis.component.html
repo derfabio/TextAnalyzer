@@ -1,4 +1,4 @@
-<div>
+<div class="main-container">
   <h2>Vowel Analysis</h2>
   <form (ngSubmit)="analyze()">
     <div>
@@ -19,5 +19,10 @@
       <pre>{{ previousAnalysis }}</pre>
     </div>
   </div>
-  <hr />
+  <div class="links">
+    <hr />
+    <a routerLink="/" class="navigationButton">Main</a>
+    <a routerLink="/consonant-analysis" class="navigationButton">Consonant Analysis</a>
+    
+  </div>
 </div>

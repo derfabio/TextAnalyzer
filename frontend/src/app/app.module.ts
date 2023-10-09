@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsonantAnalysisComponent } from './consonant-analysis/consonant-analysis.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
   { path: 'vowels', redirectTo: '/vowel-analysis', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     VowelAnalysisComponent,
-    ConsonantAnalysisComponent
+    ConsonantAnalysisComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
