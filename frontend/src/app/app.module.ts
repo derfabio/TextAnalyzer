@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { VowelAnalysisComponent } from './vowel-analysis/vowel-analysis.component';
+import { VowelAnalysisComponent } from './offline/vowel-analysis/vowel-analysis.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ConsonantAnalysisComponent } from './consonant-analysis/consonant-analysis.component';
+import { ConsonantAnalysisComponent } from './offline/consonant-analysis/consonant-analysis.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VowelAnalysisComponent } from './vowel-analysis/vowel-analysis.component';
-import { ConsonantAnalysisComponent } from './consonant-analysis/consonant-analysis.component';
+import { VowelAnalysisComponent } from './offline/vowel-analysis/vowel-analysis.component';
+import { ConsonantAnalysisComponent } from './offline/consonant-analysis/consonant-analysis.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
