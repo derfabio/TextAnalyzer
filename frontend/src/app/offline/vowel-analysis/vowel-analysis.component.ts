@@ -20,10 +20,10 @@ export class VowelAnalysisComponent {
   latestAnalysis: string = '';
 
   analyze() {
-    this.previousAnalysis = this.latestAnalysis; // Store the latest analysis as previous
-    this.resetCounts(); // Reset the counts for the latest analysis
-    this.countVowels(); // Count vowels for the latest analysis
-    this.latestAnalysis = this.generateOutput(); // Generate the latest analysis
+    this.previousAnalysis = this.latestAnalysis;
+    this.resetCounts();
+    this.countVowels();
+    this.latestAnalysis = this.generateOutput();
   }
   
   private countVowels() {

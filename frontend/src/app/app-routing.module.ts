@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VowelAnalysisComponent } from './vowel-analysis/vowel-analysis.component';
-import { ConsonantAnalysisComponent } from './consonant-analysis/consonant-analysis.component';
-import { MainPageComponent } from './main-page/main-page.component';
+import { VowelAnalysisComponent } from './offline/vowel-analysis/vowel-analysis.component';
+import { ConsonantAnalysisComponent } from './offline/consonant-analysis/consonant-analysis.component';
+import { OfflineMainPageComponent } from './offline/offline-main-page/offline-main-page.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', component: MainPageComponent },
+  { path: '', component: AppComponent},
+  { path: 'offline', component: OfflineMainPageComponent },
   { path: 'vowel-analysis', component: VowelAnalysisComponent },
   { path: 'consonant-analysis', component: ConsonantAnalysisComponent },
 ];

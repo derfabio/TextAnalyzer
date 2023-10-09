@@ -9,6 +9,7 @@ import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @CrossOrigin
 @RestController
@@ -25,6 +26,11 @@ public class TextEndpoint{
     @GetMapping(value = "/all")
     public List<Text> getAllTexts() {
         return textService.getAllTexts();
+    }
+
+    @GetMapping(value = "/{id}")
+    public Optional<Text> getTextById(@PathVariable Long id) {
+        return textService.getTextById(id);
     }
 
     @GetMapping(value = "/{character_type}/{id}")
