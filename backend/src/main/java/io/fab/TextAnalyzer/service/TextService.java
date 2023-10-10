@@ -1,9 +1,7 @@
 package io.fab.TextAnalyzer.service;
 
-import io.fab.TextAnalyzer.entity.CharacterMap;
 import io.fab.TextAnalyzer.entity.Text;
 import io.fab.TextAnalyzer.repository.TextRepository;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,9 +26,10 @@ public class TextService {
         return textRepository.findTextById(id);
     }
 
-    public void saveText(Text text) {
+    public Text saveText(Text text) {
         textRepository.save(text);
         saveCharacterOccurrencesForText(text);
+        return text;
     }
 
     public void saveCharacterOccurrencesForText(Text text) {

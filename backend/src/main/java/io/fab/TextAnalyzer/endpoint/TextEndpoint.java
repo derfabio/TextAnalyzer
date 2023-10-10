@@ -43,7 +43,7 @@ public class TextEndpoint{
     }
 
     @PostMapping(value = "/new")
-    public void postText(@RequestBody Text text) {
-        textService.saveText(text);
+    public Text postText(@RequestBody Text text) {
+        return textService.saveText(text);
     }
 }

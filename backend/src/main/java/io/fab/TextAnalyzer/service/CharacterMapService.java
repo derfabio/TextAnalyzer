@@ -20,6 +20,10 @@ public class CharacterMapService {
 
     public Map<Character, Integer> getCharacterOccurrences(String sentence) {
         Map<Character, Integer> characterCountMap = new HashMap<>();
+        if (sentence == null) {
+            System.out.println("Sentence is Null");
+            return characterCountMap;
+        }
         String lowercaseInput = sentence.toLowerCase();
         for (char character : lowercaseInput.toCharArray()) {
             if (Character.isLetter(character)) {
