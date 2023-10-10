@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>Online Text Analysis</h2>
+    <form [formGroup]="analysisForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="text">Text to Analyze:</label>
+        <textarea formControlName="text" id="text" rows="4" cols="50"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Analyze Text</button>
+    </form>
+  
+     <!-- Analysis Type Selection -->
+     <div class="form-group">
+        <label for="analysisType">Select Analysis Type:</label>
+        <select formControlName="analysisType" id="analysisType">
+          <option value="">Select an Analysis Type</option>
+          <option value="vowel">Count Vowels</option>
+          <option value="consonant">Count Consonants</option>
+        </select>
+    </div>
+    
+      
+    <!-- Display analysis results here -->
+    <div *ngIf="analysisResults">
+      <h3>Analysis Results:</h3>
+      <!-- Display the results in your desired format -->
+      <pre>{{ analysisResults | json }}</pre>
+    </div>
+
+    <div class="links">
+        <hr />
+        <a routerLink="/" class="navigationButton">Main</a>        
+      </div>
+  </div>
+  
